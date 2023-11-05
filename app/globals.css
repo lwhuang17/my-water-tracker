@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#water #waveShape {
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+  }
+  
+@keyframes waveAction {
+  0% {
+    transform: translate(300px, -1880px);
+  }
+  100% {
+    transform: translate(102px, -1880px);
+  }
+}
